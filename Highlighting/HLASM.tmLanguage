@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>.hlasm</string>
+	</array>
+	<key>name</key>
+	<string>HLASM</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Comment line</string>
+			<key>match</key>
+			<string>\*+.*\n</string>
+			<key>name</key>
+			<string>comment.other.hlasm</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Control symbols</string>
+			<key>match</key>
+			<string>([,'"$?=&amp;]+)</string>
+			<key>name</key>
+			<string>variable.complex.hlasm</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Keywords</string>
+			<key>match</key>
+			<string>^[\w.@#]*[\s]+(\S+)</string>
+			<key>name</key>
+			<string>constant.language.hlasm</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>All other text</string>
+			<key>match</key>
+			<string>([^,'"$=?&amp;]*)</string>
+			<key>name</key>
+			<string>constant.other.hlasm</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Comment after code</string>
+			<key>match</key>
+			<string>.*</string>
+			<key>name</key>
+			<string>comment.other.hlasm</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.hlasm</string>
+	<key>uuid</key>
+	<string>3fd536ab-0341-4bab-bce0-b557920f9723</string>
+</dict>
+</plist>

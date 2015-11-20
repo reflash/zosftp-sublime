@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>jcl</string>
+	</array>
+	<key>name</key>
+	<string>JCL</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Comment line</string>
+			<key>match</key>
+			<string>(//\*+.*)</string>
+			<key>name</key>
+			<string>comment.other.jcl</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Keywords</string>
+			<key>match</key>
+			<string>^//[\w\.@#]+[\s]+(\S+)</string>
+			<key>name</key>
+			<string>constant.language.jcl</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Other</string>
+			<key>match</key>
+			<string>([^,'"=?&amp;]*)</string>
+			<key>name</key>
+			<string>constant.other.jcl</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Control symbols</string>
+			<key>match</key>
+			<string>([,'"?=&amp;]+)</string>
+			<key>name</key>
+			<string>variable.complex.jcl</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.jcl</string>
+	<key>uuid</key>
+	<string>e83d9c7f-13ea-4439-b415-153317246d34</string>
+</dict>
+</plist>

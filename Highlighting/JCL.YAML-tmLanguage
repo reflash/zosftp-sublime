@@ -1,0 +1,20 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: JCL
+scopeName: source.jcl
+fileTypes: [jcl]
+uuid: e83d9c7f-13ea-4439-b415-153317246d34
+
+patterns:
+- comment: Comment line
+  name: comment.other.jcl
+  match: (//\*+.*)
+- comment: Keywords
+  name: constant.language.jcl
+  match: ^//[\w\.@#]+[\s]+(\S+)
+- comment: Other
+  name: constant.other.jcl
+  match: ([^,'"=?&]*)
+- comment: Control symbols
+  name: variable.complex.jcl
+  match: ([,'"?=&]+)

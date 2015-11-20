@@ -1,0 +1,23 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: HLASM
+scopeName: source.hlasm
+fileTypes: [.hlasm]
+uuid: 3fd536ab-0341-4bab-bce0-b557920f9723
+
+patterns:
+- comment: Comment line
+  name: comment.other.hlasm
+  match: \*+.*\n
+- comment: Control symbols
+  name: variable.complex.hlasm
+  match: ([,'"$?=&]+)
+- comment: Keywords
+  name: constant.language.hlasm
+  match: ^[\w.@#]*[\s]+(\S+)
+- comment: All other text
+  name: constant.other.hlasm
+  match: ([^,'"$=?&]*)
+- comment: Comment after code
+  name: comment.other.hlasm
+  match: .*
