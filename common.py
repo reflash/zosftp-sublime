@@ -3,6 +3,7 @@ import os, sys
 import json
 
 sys.path.append(os.path.dirname(__file__))
+sys.path.append(os.path.join(os.path.dirname(__file__), "third_party")
 
 from third_party.appdirs_.appdirs import *
 from z_os_ftp import z_OS_FTP_Client
