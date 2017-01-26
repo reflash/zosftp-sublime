@@ -2,7 +2,9 @@ import sublime, sublime_plugin
 import os, sys
 import json
 
-from appdirs import *
+sys.path.append(os.path.dirname(__file__))
+
+from third_party.appdirs_.appdirs import *
 from z_os_ftp import z_OS_FTP_Client
 
 
