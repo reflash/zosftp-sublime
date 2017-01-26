@@ -27,7 +27,7 @@ class Set_settingsCommand(sublime_plugin.WindowCommand):
     def on_host_input(self, user_input):
         if user_input != '':
             self.settings.host = user_input 
-            with open(__filename__, 'w') as outfile:
+            with open(common.__filename__, 'w') as outfile:
                 json.dump(self.settings.__dict__, outfile)
             print("Settings saved")
         else:
