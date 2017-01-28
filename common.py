@@ -26,3 +26,6 @@ appauthor = "Reflash"
 __location__ = user_data_dir(appname, appauthor)
 
 __filename__ = os.path.join(__location__, 'settings.json')
+
+if not os.path.exists(__location__):
+    os.makedirs(__location__)
