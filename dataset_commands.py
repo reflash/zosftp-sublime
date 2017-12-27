@@ -21,7 +21,7 @@ class Open_datasetCommand(sublime_plugin.WindowCommand):
 
     def display(self,text):
         view = self.window.new_file()
-        view.run_command("new_file",{ "text" : text});
+        view.run_command("new_zos_file",{ "text" : text});
 
 class Save_datasetCommand(sublime_plugin.TextCommand):
 
@@ -50,4 +50,4 @@ class Save_datasetCommand(sublime_plugin.TextCommand):
 
     def display(self,text):
         view = self.window.new_file()
-        view.run_command("new_file",{ "text" : text});
+        view.run_command("new_zos_file",{ "text" : text});

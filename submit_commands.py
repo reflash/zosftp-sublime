@@ -5,7 +5,7 @@ import common
 def display(text):
     window = sublime.active_window()
     view = window.new_file()
-    view.run_command("new_file",{ "text" : text});
+    view.run_command("new_zos_file",{ "text" : text});
 
 
 class Submit_job_and_waitCommand(sublime_plugin.TextCommand):

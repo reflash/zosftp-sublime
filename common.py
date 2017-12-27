@@ -9,7 +9,7 @@ from appdirs import *
 from z_os_ftp import z_OS_FTP_Client
 
 
-class New_fileCommand(sublime_plugin.TextCommand):
+class New_zos_fileCommand(sublime_plugin.TextCommand):
     def run(self, edit, text):
         self.view.insert(edit, 0, ''.join(text))
 
